@@ -23,70 +23,164 @@
 <body>
 <main>
   <h1>Quyền riêng tư</h1>
-  <p class="dim">App Bubget · Cập nhật ngày 28/10/2026</p>
+  <p class="dim">App Bubget · Cập nhật ngày 3/11/2026</p>
 
-  <p><strong>Ngắn gọn:</strong> Bubget không thu thập, không gửi đi và không bán bất kỳ dữ liệu nào của bạn. Ảnh và số tiền chỉ nằm trong iPhone của bạn.</p>
+  <p><strong>Ngắn gọn:</strong> Không bắt buộc tài khoản. Không đăng nhập thì mọi thứ chỉ nằm trong iPhone của bạn. Nếu bạn đăng nhập Apple để sao lưu, Bubget giữ một bản sao trên máy chủ, chỉ để sao lưu và đồng bộ. Bubget không bán dữ liệu và không theo dõi bạn.</p>
 
-  <h2>Dữ liệu lưu ở đâu</h2>
+  <h2>Khi không đăng nhập</h2>
   <ul>
-    <li>Ảnh, số tiền, nhóm và cài đặt được lưu trong bộ nhớ của app trên iPhone.</li>
-    <li>Bubget không có máy chủ, không có tài khoản, không cần đăng nhập.</li>
+    <li>Ảnh, số tiền, nhóm, ghi chú, chuỗi và cài đặt chỉ lưu trong bộ nhớ của app trên iPhone. Không có gì gửi lên máy chủ của Bubget.</li>
     <li>Nếu bạn bật sao lưu iCloud cho iPhone, Apple sao lưu dữ liệu này cùng iPhone theo chính sách của Apple.</li>
     <li>Xoá app là xoá hết dữ liệu trong app.</li>
   </ul>
 
+  <h2>Khi đăng nhập Apple để sao lưu (tự chọn)</h2>
+  <p>Bubget nhận và lưu:</p>
+  <ul>
+    <li><strong>Mã người dùng Apple:</strong> một dãy ký tự Apple cấp riêng cho Bubget, để nhận ra tài khoản của bạn. Bubget không lưu email hay tên của bạn.</li>
+    <li><strong>Khoản chi trong 3 tháng gần nhất:</strong> số tiền, ngày giờ, nhóm (emoji và tên nhóm), ghi chú, thẻ chữ và ảnh (bản rộng 1080 điểm ảnh).</li>
+    <li><strong>Chuỗi:</strong> các ngày bạn có ghi, ngày bạn bấm "Hôm nay không chi" và lượt cứu chuỗi đã dùng.</li>
+  </ul>
+  <p>Dữ liệu này chỉ dùng để sao lưu, đồng bộ giữa các máy của bạn và giữ chuỗi khi đổi máy. Bubget không dùng vào việc khác, không chia sẻ và không bán cho ai. Người làm app không xem ảnh của bạn.</p>
+
+  <h2>Lưu ở đâu</h2>
+  <ul>
+    <li>Máy chủ của Cloudflare (cơ sở dữ liệu D1 và kho ảnh R2), đặt ở vùng châu Á – Thái Bình Dương.</li>
+    <li>Dữ liệu đi giữa app và máy chủ qua kết nối mã hoá (HTTPS).</li>
+    <li>Cloudflare xử lý địa chỉ IP trong lúc nhận yêu cầu, để chặn lạm dụng. Bubget không lưu địa chỉ IP.</li>
+    <li>Nhật ký của máy chủ không ghi ảnh, số tiền hay mã đăng nhập.</li>
+  </ul>
+
+  <h2>Giữ bao lâu</h2>
+  <ul>
+    <li>Khoản chi và ảnh trên máy chủ: 3 tháng gần nhất. Khoản cũ hơn tự xoá khỏi máy chủ, nhưng vẫn còn trong iPhone.</li>
+    <li>Chuỗi: giữ tới khi bạn xoá tài khoản.</li>
+    <li>Bản dự phòng của máy chủ: tự xoá sau tối đa 30 ngày.</li>
+    <li>Phiên đăng nhập hết hạn sau 90 ngày không dùng.</li>
+  </ul>
+
+  <h2>Đăng xuất và xoá tài khoản</h2>
+  <ul>
+    <li><strong>Đăng xuất</strong> (⚙️ → Sao lưu → Đăng xuất): máy này ngừng sao lưu. Dữ liệu trong máy vẫn còn.</li>
+    <li><strong>Xoá tài khoản</strong> (⚙️ → Sao lưu → Xoá tài khoản): dữ liệu trên máy chủ bị xoá ngay. Bản dự phòng tự xoá sau tối đa 30 ngày. Bubget cũng huỷ quyền đăng nhập Apple đã cấp. Sau đó bạn chọn có xoá cả dữ liệu trong máy hay không.</li>
+  </ul>
+
+  <h2>Quyền của bạn</h2>
+  <ul>
+    <li>Xem, sửa, xoá từng khoản ngay trong app.</li>
+    <li>Xuất toàn bộ dữ liệu ra file Excel, kèm ảnh: ⚙️ → Xuất dữ liệu.</li>
+    <li>Xoá tài khoản và dữ liệu trên máy chủ bất cứ lúc nào.</li>
+    <li>Cần hỗ trợ thêm về dữ liệu của bạn: email ở cuối trang.</li>
+  </ul>
+
   <h2>Quyền app xin</h2>
   <ul>
-    <li><strong>Camera:</strong> để chụp ảnh khoản chi. Ảnh không rời khỏi máy.</li>
+    <li><strong>Camera:</strong> để chụp ảnh khoản chi.</li>
     <li><strong>Thư viện ảnh:</strong> chỉ khi bạn chọn ảnh có sẵn hoặc bấm "Lưu vào Ảnh".</li>
     <li><strong>Face ID:</strong> chỉ khi bạn bật khoá app. Apple xử lý khuôn mặt; Bubget chỉ nhận kết quả "đúng / sai".</li>
+    <li><strong>Thông báo:</strong> chỉ hỏi khi chuỗi đạt 3 ngày, để nhắc bạn ghi chi tiêu lúc 21h. Lời nhắc hẹn sẵn ngay trong iPhone, không đi qua máy chủ. Tắt ở ⚙️ → Nhắc lúc 21h.</li>
   </ul>
 
   <h2>Không theo dõi</h2>
-  <p>Bubget không dùng quảng cáo, không dùng công cụ phân tích, không theo dõi bạn qua app hay web khác.</p>
+  <p>Bubget không dùng công cụ phân tích và không theo dõi bạn qua app hay web khác. Nếu sau này có thay đổi (ví dụ thêm quảng cáo), trang này sẽ được cập nhật trước.</p>
+
+  <h2>Dùng đúng luật</h2>
+  <p>Không dùng Bubget để lưu nội dung vi phạm pháp luật. Khi cơ quan có thẩm quyền yêu cầu theo đúng luật, Bubget làm theo.</p>
 
   <h2>Cập nhật app</h2>
   <p>App có thể tải bản cập nhật nhỏ từ máy chủ của Expo. Việc này chỉ tải mã app về, không gửi dữ liệu của bạn đi.</p>
 
   <h2>Trẻ em</h2>
-  <p>Bubget không thu thập dữ liệu của bất kỳ ai, kể cả trẻ em.</p>
+  <p>Bubget không dành riêng cho trẻ em và không cố ý thu thập dữ liệu của trẻ em.</p>
+
+  <h2>Thay đổi chính sách</h2>
+  <p>Khi chính sách thay đổi, ngày cập nhật ở đầu trang sẽ đổi theo.</p>
 
   <h2>Liên hệ</h2>
   <p>Có câu hỏi, gửi email tới <a href="mailto:bubget.app@gmail.com">bubget.app@gmail.com</a>.</p>
 
+  <p class="dim"><a href="support/">Hỗ trợ</a></p>
+
   <hr>
 
   <h1>Privacy Policy</h1>
-  <p class="dim">Bubget app · Last updated October 28, 2026</p>
+  <p class="dim">Bubget app · Last updated November 3, 2026</p>
 
-  <p><strong>In short:</strong> Bubget does not collect, transmit, or sell any of your data. Your photos and amounts stay on your iPhone.</p>
+  <p><strong>In short:</strong> An account is optional. If you don't sign in, everything stays on your iPhone. If you sign in with Apple to back up, Bubget keeps a copy on its server, only for backup and sync. Bubget does not sell your data and does not track you.</p>
 
-  <h2>Where your data is stored</h2>
+  <h2>Without signing in</h2>
   <ul>
-    <li>Photos, amounts, categories, and settings are stored locally in the app on your iPhone.</li>
-    <li>Bubget has no servers and no accounts. No sign-in is required.</li>
+    <li>Photos, amounts, categories, notes, streak and settings are stored only in the app on your iPhone. Nothing is sent to Bubget's server.</li>
     <li>If iCloud Backup is on for your iPhone, Apple backs up this data with your device under Apple's privacy policy.</li>
     <li>Deleting the app deletes all of its data.</li>
   </ul>
 
+  <h2>When you sign in with Apple to back up (optional)</h2>
+  <p>Bubget receives and stores:</p>
+  <ul>
+    <li><strong>Apple user identifier:</strong> a string Apple issues to Bubget only, used to recognize your account. Bubget does not store your email or name.</li>
+    <li><strong>Expenses from the last 3 months:</strong> amount, date and time, category (emoji and name), note, text card and photo (1080 pixels wide).</li>
+    <li><strong>Streak:</strong> the days you logged, the days you tapped "No spending today", and the streak rescues you used.</li>
+  </ul>
+  <p>This data is used only to back up, sync across your devices, and keep your streak when you change phones. Bubget does not use it for anything else, and does not share or sell it. The people who make Bubget do not look at your photos.</p>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li>On Cloudflare's servers (D1 database and R2 photo storage), in the Asia-Pacific region.</li>
+    <li>Data travels between the app and the server over an encrypted connection (HTTPS).</li>
+    <li>Cloudflare processes IP addresses while handling requests, to prevent abuse. Bubget does not store IP addresses.</li>
+    <li>Server logs never contain photos, amounts or sign-in tokens.</li>
+  </ul>
+
+  <h2>How long it is kept</h2>
+  <ul>
+    <li>Expenses and photos on the server: the last 3 months. Older items are deleted from the server automatically but stay on your iPhone.</li>
+    <li>Streak: until you delete your account.</li>
+    <li>Server backups: deleted after at most 30 days.</li>
+    <li>Sign-in sessions expire after 90 days without use.</li>
+  </ul>
+
+  <h2>Signing out and deleting your account</h2>
+  <ul>
+    <li><strong>Sign out</strong> (⚙️ → Sao lưu → Đăng xuất): this device stops backing up. Data on the device stays.</li>
+    <li><strong>Delete account</strong> (⚙️ → Sao lưu → Xoá tài khoản): your data on the server is deleted immediately. Server backups are deleted within 30 days. Bubget also revokes the Sign in with Apple authorization. You then choose whether to delete the data on the device too.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <ul>
+    <li>View, edit and delete any expense in the app.</li>
+    <li>Export all your data to an Excel file, with photos: ⚙️ → Xuất dữ liệu (Export).</li>
+    <li>Delete your account and server data at any time.</li>
+    <li>For any other request about your data, email us at the address below.</li>
+  </ul>
+
   <h2>Permissions</h2>
   <ul>
-    <li><strong>Camera:</strong> to take photos of your expenses. Photos never leave your device.</li>
+    <li><strong>Camera:</strong> to take photos of your expenses.</li>
     <li><strong>Photo library:</strong> only when you pick an existing photo or tap "Save to Photos".</li>
     <li><strong>Face ID:</strong> only if you turn on app lock. Apple handles face data; Bubget only receives a success or failure result.</li>
+    <li><strong>Notifications:</strong> only asked when your streak reaches 3 days, to remind you to log at 9 PM. Reminders are scheduled on your iPhone and do not go through a server. Turn off in ⚙️ → Nhắc lúc 21h.</li>
   </ul>
 
   <h2>No tracking</h2>
-  <p>Bubget has no ads and no analytics, and does not track you across other apps or websites.</p>
+  <p>Bubget has no analytics and does not track you across other apps or websites. If this ever changes (for example, if ads are added), this page will be updated first.</p>
+
+  <h2>Lawful use</h2>
+  <p>Do not use Bubget to store illegal content. Bubget complies with lawful requests from competent authorities.</p>
 
   <h2>App updates</h2>
   <p>The app may download small updates from Expo's servers. This only downloads app code and does not send your data.</p>
 
   <h2>Children</h2>
-  <p>Bubget does not collect data from anyone, including children.</p>
+  <p>Bubget is not directed at children and does not knowingly collect data from children.</p>
+
+  <h2>Changes</h2>
+  <p>When this policy changes, the date at the top of the page changes too.</p>
 
   <h2>Contact</h2>
   <p>Questions? Email <a href="mailto:bubget.app@gmail.com">bubget.app@gmail.com</a>.</p>
+
+  <p class="dim"><a href="support/">Support</a></p>
 </main>
 </body>
 </html>
